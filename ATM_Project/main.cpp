@@ -141,7 +141,7 @@ int main() {
 			}
 			view(account);
 	
-			DB[userIndex][3] = account-> GetBalance(); // 실제로 수정되진 않음
+			DB[userIndex][3] = account-> GetBalance(); 
 			
 			delete temp;
 			END:
