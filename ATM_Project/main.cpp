@@ -24,7 +24,6 @@ enum SelectFunction {
 };
 
 
-
 bool ValidatePin(int user_pin) {
 	for (int i = 0; i < DB_Count; i++)
 		if (DB[i][PIN_NUMBER] == user_pin) {
@@ -37,7 +36,6 @@ bool ValidatePin(int user_pin) {
 
 int select_Account() {
 	int option;
-
 	while (true) {
 		cout << "\n 1. Checking Account " << endl;
 		cout << " 2. Saving Account " << endl;
@@ -53,7 +51,6 @@ int select_Account() {
 
 int select_Function() {
 	int option;
-
 	while (true) {
 		cout << "\n 1. See balance" << endl;
 		cout << " 2. Withdraw" << endl;
@@ -66,7 +63,6 @@ int select_Function() {
 	}
 	return option;
 }
-
 
 
 void view(AccountSettings* ac) {
@@ -94,9 +90,7 @@ void view(AccountSettings* ac) {
 					cout << "\n Before Your Account Balance is : $" << before_AccountBalance << endl;
 					cout << " Current Your Account Balance is : $" << ac->GetBalance() << endl;
 				}
-
 			}
-
 			break;
 		case DEPOSIT:
 			cout << " Please enter an amount to deposit :";
@@ -123,9 +117,7 @@ void view(AccountSettings* ac) {
 }
 
 int main() {
-	
 	int user_pin, pin_err_count=0;
-	
 	do {
 		cout << " Please enter your pin Number to access your account : ";
 		cin >> user_pin;
@@ -136,7 +128,6 @@ int main() {
 			AccountSettings* temp = account;
 			CheckingAccount checkingAccout(DB[userIndex][CHECKING_ACCOUNT_BALANCE]);
 			SavingAccount savingAccount(DB[userIndex][SAVING_ACCOUNT_BALANCE]);
-	
 
 			switch (option) {
 				case CHECKING:
@@ -148,15 +139,9 @@ int main() {
 				case EXIT:
 					goto END;
 			}
-			
-			
 			view(account);
 	
-
-
-
-			
-			DB[userIndex][3] = account-> GetBalance();
+			DB[userIndex][3] = account-> GetBalance(); // 실제로 수정되진 않음
 			
 			delete temp;
 			END:
