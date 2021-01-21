@@ -1,7 +1,7 @@
 # ATM_Controller
 Implement a simple ATM controller, based on c++ program
 ## file description 
-![image](https://user-images.githubusercontent.com/70446214/105352872-d6b0dc80-5c31-11eb-92cb-38d17d367b43.png)
+![image](https://user-images.githubusercontent.com/70446214/105359098-62c70200-5c3a-11eb-8089-85cb99c15560.png)
 
 - as you can see, DB[][3] is temporary Database. column of array DB[][3] is based on {pin Number, Checking Account Balance, Saving Account Balance}.
 if you wanna add new things , you can register.
