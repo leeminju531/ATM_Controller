@@ -1,0 +1,2 @@
+C:\Users\이민주\Desktop\이민주note\bearRobotics\ATM_Project\ATM_Project\ATM_Project\Debug\ATM_Project.exe
+C:\Users\이민주\Desktop\이민주note\bearRobotics\ATM_Project\ATM_Project\ATM_Project\Debug\ATM_Project.pdb
